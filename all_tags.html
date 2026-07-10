@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete HTML Practice File">
+    <meta name="keywords" content="HTML, Practice, Beginner">
+    <meta name="author" content="Student">
+
+    <!-- Base URL -->
+    <base href="https://example.com/" target="_blank">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <title>Complete HTML Practice</title>
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
+
+    <header>
+        <h1>Complete HTML Practice File</h1>
+
+        <nav>
+            <a href="#headings">Headings</a> |
+            <a href="#lists">Lists</a> |
+            <a href="#table">Table</a> |
+            <a href="#form">Form</a> |
+            <a href="#media">Media</a>
+        </nav>
+
+        <hr>
+    </header>
+
+    <!-- ========================= -->
+    <!-- MAIN -->
+    <!-- ========================= -->
+
+    <main>
+
+        <!-- ========================= -->
+        <!-- HEADINGS -->
+        <!-- ========================= -->
+
+        <section id="headings">
+
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+
+            <p>
+                This is a normal paragraph.
+            </p>
+
+            <p>
+                <b>Bold</b><br>
+                <strong>Strong</strong><br>
+                <i>Italic</i><br>
+                <em>Emphasized</em><br>
+                <u>Underline</u><br>
+                <mark>Highlighted</mark><br>
+                <small>Small Text</small><br>
+                H<sub>2</sub>O<br>
+                X<sup>2</sup><br>
+                <del>Deleted Text</del><br>
+                <ins>Inserted Text</ins>
+            </p>
+
+            <hr>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- LINKS -->
+        <!-- ========================= -->
+
+        <section>
+
+            <h2>Links</h2>
+
+            <a href="#table">Internal Link</a><br><br>
+
+            <a href="https://www.google.com">External Link</a><br><br>
+
+            <a href="https://www.openai.com" target="_blank">
+                Open in New Tab
+            </a><br><br>
+
+            <a href="mailto:test@example.com">
+                Send Email
+            </a><br><br>
+
+            <a href="tel:+8801700000000">
+                Call Now
+            </a>
+
+        </section>
+
+        <hr>
+
+        <!-- ========================= -->
+        <!-- LISTS -->
+        <!-- ========================= -->
+
+        <section id="lists">
+
+            <h2>Ordered List</h2>
+
+            <ol>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Mango</li>
+            </ol>
+
+            <h2>Unordered List</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h2>Nested List</h2>
+
+            <ul>
+                <li>Programming
+                    <ul>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>Description List</h2>
+
+            <dl>
+
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+
+                <dt>JS</dt>
+                <dd>JavaScript</dd>
+
+            </dl>
+
+        </section>
+
+        <hr>
+
+        <!-- ========================= -->
+        <!-- IMAGE -->
+        <!-- ========================= -->
+
+        <section>
+
+            <h2>Images</h2>
+
+            <img src="images/sample.jpg"
+                alt="Sample Image"
+                width="200"
+                height="150">
+
+            <br><br>
+
+            <a href="https://www.google.com">
+
+                <img src="images/logo.png"
+                    alt="Clickable Logo"
+                    width="120">
+
+            </a>
+
+        </section>
+
+        <hr>
+
+        <!-- ========================= -->
+        <!-- TABLE -->
+        <!-- ========================= -->
+
+        <section id="table">
+
+            <h2>Table Example</h2>
+
+            <table border="1">
+
+                <caption>
+                    Student Information
+                </caption>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>101</td>
+                        <td>John</td>
+                        <td>CSE</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td rowspan="2">102</td>
+                        <td>David</td>
+                        <td>EEE</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Mike</td>
+                        <td>Civil</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td colspan="3">
+                            End of Data
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+                <tfoot>
+
+                    <tr>
+
+                        <td colspan="3">
+                            Total Students = 3
+                        </td>
+
+                    </tr>
+
+                </tfoot>
+
+            </table>
+
+        </section>
+
+        <hr>
+
+        <!-- ========================= -->
+        <!-- FORM -->
+        <!-- ========================= -->
+
+        <section id="form">
+
+            <h2>Registration Form</h2>
+
+            <form action="submit.php" method="post">
+
+                <fieldset>
+
+                    <legend>Personal Information</legend>
+
+                    <label for="name">Name:</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        maxlength="30"
+                        placeholder="Enter your name">
+
+                    <br><br>
+
+                    <label for="password">Password:</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        required>
+
+                    <br><br>
+
+                    <label for="email">Email:</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        required>
+
+                    <br><br>
+
+                    <label for="number">Age:</label>
+
+                    <input
+                        type="number"
+                        min="18"
+                        max="60">
+
+                    <br><br>
+
+                    <label>Date:</label>
+
+                    <input type="date">
+
+                    <br><br>
+
+                    <label>Phone:</label>
+
+                    <input
+                        type="tel"
+                        pattern="[0-9]{11}"
+                        placeholder="01XXXXXXXXX">
+
+                    <br><br>
+
+                    <label>Website:</label>
+
+                    <input
+                        type="url"
+                        placeholder="https://">
+
+                    <br><br>
+
+                    <label>Upload File:</label>
+
+                    <input type="file">
+
+                    <br><br>
+
+                    <label>Message:</label>
+
+                    <textarea rows="5" cols="30"></textarea>
+
+                    <br><br>
+
+                    <label>Department</label>
+
+                    <select>
+
+                        <optgroup label="Engineering">
+
+                            <option>CSE</option>
+                            <option>EEE</option>
+
+                        </optgroup>
+
+                        <optgroup label="Business">
+
+                            <option>BBA</option>
+                            <option>Accounting</option>
+
+                        </optgroup>
+
+                    </select>
+
+                    <br><br>
+
+                    Gender
+
+                    <input
+                        type="radio"
+                        id="male"
+                        name="gender">
+
+                    <label for="male">Male</label>
+
+                    <input
+                        type="radio"
+                        id="female"
+                        name="gender">
+
+                    <label for="female">Female</label>
+
+                    <br><br>
+
+                    Skills
+
+                    <input
+                        type="checkbox"
+                        id="html">
+
+                    <label for="html">HTML</label>
+
+                    <input
+                        type="checkbox"
+                        id="css">
+
+                    <label for="css">CSS</label>
+
+                    <input
+                        type="checkbox"
+                        id="js">
+
+                    <label for="js">JavaScript</label>
+
+                    <br><br>
+
+                    <label>Favorite Browser</label>
+
+                    <input list="browser">
+
+                    <datalist id="browser">
+
+                        <option value="Chrome">
+                        <option value="Firefox">
+                        <option value="Safari">
+                        <option value="Edge">
+
+                    </datalist>
+
+                    <br><br>
+
+                    <button type="button">
+                        Normal Button
+                    </button>
+
+                    <input
+                        type="submit"
+                        value="Submit">
+
+                    <input
+                        type="reset"
+                        value="Reset">
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+        <hr>
+
+        <!-- ========================= -->
+        <!-- ARTICLE -->
+        <!-- ========================= -->
+
+        <section>
+
+            <article>
+
+                <h2>Article Example</h2>
+
+                <p>
+                    This is an article section.
+                </p>
+
+            </article>
+
+            <aside>
+
+                <h3>Aside</h3>
+
+                <p>
+                    Related information appears here.
+                </p>
+
+            </aside>
+
+        </section>
+
+        <hr>
+
+        <!-- ========================= -->
+        <!-- DIV & SPAN -->
+        <!-- ========================= -->
+
+        <div>
+
+            This is a DIV element.
+
+            <span>
+                This is a SPAN element.
+            </span>
+
+        </div>
+
+        <hr>
+
+        <!-- ========================= -->
+        <!-- FIGURE -->
+        <!-- ========================= -->
+
+        <figure>
+
+            <img
+                src="images/mountain.jpg"
+                alt="Mountain"
+                width="300">
+
+            <figcaption>
+                Beautiful Mountain
+            </figcaption>
+
+        </figure>
+
+        <hr>
+
+        <!-- ========================= -->
+        <!-- BLOCKQUOTE -->
+        <!-- ========================= -->
+
+        <blockquote cite="https://example.com">
+
+            Learning HTML is the first step toward web development.
+
+        </blockquote>
+
+        <p>
+            Source:
+            <cite>HTML Guide</cite>
+        </p>
+
+        <address>
+
+            John Doe<br>
+
+            Dhaka, Bangladesh<br>
+
+            Email: abc@example.com
+
+        </address>
+
+        <hr>
+
+        <!-- ========================= -->
+        <!-- MEDIA -->
+        <!-- ========================= -->
+
+        <section id="media">
+
+            <h2>Audio</h2>
+
+            <audio controls>
+
+                <source src="music.mp3" type="audio/mpeg">
+
+                <source src="music.ogg" type="audio/ogg">
+
+                Audio not supported.
+
+            </audio>
+
+            <hr>
+
+            <h2>Video</h2>
+
+            <video
+                controls
+                width="400"
+                poster="poster.jpg">
+
+                <source src="video.mp4" type="video/mp4">
+
+                <source src="video.ogg" type="video/ogg">
+
+                Video not supported.
+
+            </video>
+
+            <hr>
+
+            <h2>Iframe</h2>
+
+            <iframe
+                src="https://www.google.com"
+                width="400"
+                height="200">
+
+            </iframe>
+
+        </section>
+
+        <hr>
+
+        <!-- ========================= -->
+        <!-- ADVANCED HTML -->
+        <!-- ========================= -->
+
+        <section>
+
+            <h2>Canvas</h2>
+
+            <canvas width="300" height="150">
+                Canvas not supported.
+            </canvas>
+
+            <hr>
+
+            <h2>Progress</h2>
+
+            <progress value="70" max="100"></progress>
+
+            <hr>
+
+            <h2>Meter</h2>
+
+            <meter value="0.7">70%</meter>
+
+            <hr>
+
+            <details>
+
+                <summary>
+                    Click to Expand
+                </summary>
+
+                <p>
+                    Hidden content appears here.
+                </p>
+
+            </details>
+
+            <hr>
+
+            <dialog open>
+
+                This is a dialog element.
+
+            </dialog>
+
+        </section>
+
+        <hr>
+
+        <!-- ========================= -->
+        <!-- GLOBAL ATTRIBUTES -->
+        <!-- ========================= -->
+
+        <section>
+
+            <h2>Global Attributes</h2>
+
+            <div
+                id="box1"
+                class="container"
+                title="This is a title"
+                data-user="student"
+                tabindex="1"
+                contenteditable="true"
+                draggable="true">
+
+                Editable & Draggable Content
+
+            </div>
+
+            <div hidden>
+
+                Hidden Element
+
+            </div>
+
+            <input
+                type="text"
+                aria-label="Search Box">
+
+            <div role="navigation">
+
+                Navigation Role Example
+
+            </div>
+
+        </section>
+
+        <hr>
+
+        <!-- Character Entities -->
+
+        <p>
+
+            Copyright &copy; 2026
+
+            <br>
+
+            10&nbsp;Students
+
+            <br>
+
+            &lt;HTML&gt;
+
+            <br>
+
+            &amp;
+
+            <br>
+
+            &quot;Quotation&quot;
+
+        </p>
+
+    </main>
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <footer>
+
+        <p>
+            End of HTML Practice File
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
